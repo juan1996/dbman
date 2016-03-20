@@ -1,0 +1,26 @@
+9 pts
+
+1. 
+
+The evidence looks strange, are you using PgAdmin?
+
+
+2.
+
+The distinction between a superkey and candidate key is deficient. Remember
+that a candidate key is the minimum set of superkeys. 
+
+
+3.
+
+Perhaps Commuter can be char(1) for y/n?
+
+You did not discuss what fields were -nullable-.
+
+
+4.
+
+The ``all rows must be unique'' rule is missing.
+
+
+- Dr. Rivas
