@@ -1,0 +1,98 @@
+6 pts
+
+Correct output for some queries
+Mostly correct SQL statements
+SQL statements are somewhat readable
+
+Recommendations: 
+ To improve your readability, write queries instead of this
+  select *
+  from products
+  where (city != 'Dallas' and city != 'Duluth') and (priceUSD >= 1.00);
+ do it like this:
+  SELECT *
+  FROM products
+  WHERE city != 'Dallas' 
+    AND city != 'Duluth' 
+    AND priceUSD >= 1;
+
+
+
+1. List the ordno and dollars of all orders.
+
+Incorrect SQL statement
+- Your query has incorrect syntax, you have two selects? why?
+ERROR:  syntax error at or near "select"
+LINE 1:  select ordno, dollars select * from orders
+
+
+2. List the name and city of agents named Smith.
+
+Correct output
+Correct SQL statement
+SQL statement is readable
+
+
+3. List the pid, name, and priceUSD of products with quantity more than
+208,000.
+
+Correct output
+Correct SQL statement
+SQL statement is readable
+
+
+4. List the names and cities of customers in Dallas.
+
+Incorrect output
+- You are giving, [city,name] but you were asked to give [name,city]
+- You are querying the wrong table!
+
+
+5. List the names of agents not in New York and not in Tokyo.
+
+Incorrect output
+- You are asked to give the names only, not the city.
+
+
+6. List all data for products not in Dallas or Duluth that cost US$1 or more.
+
+Correct output
+Correct SQL statement
+Query is hard to read. Please format your query for better reading.
+
+
+7. List all data for orders in January or March.
+
+Correct output
+Correct SQL statement
+SQL statement is readable
+
+
+8. List all data for orders in February less than US$500.
+
+Correct output
+Correct SQL statement
+SQL statement is readable
+
+
+9. List all orders from the customer whose cid is C005.
+
+MISSING QUERY!
+
+
+In general: 
+
+- Be careful with the way you are using parenthesis. They were not
+strictly necessary for this lab. Use them only if necessary or if it helps with
+the organization of the SQL statement.
+
+- Test all your SQL statements.
+
+- Make sure you read all the instructions for queries really well.
+
+- You submitted a text file, that was not runnable, I had to convert your
+  file to the desired format. Please check the file I created lab3.sql
+
+
+
+- Dr. Rivas
